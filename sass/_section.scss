@@ -1,0 +1,197 @@
+#hero{
+    padding-top: 100px;
+}
+
+.hero__left{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 45%;
+}
+
+.hero__right{
+    width: 45%;
+}
+
+.hero__btn{
+    width: 150px;
+    height: 40px;
+    color: $primaryColor;
+    border: 1px solid $hoverColor;
+    background: $hoverColor;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.hero__btn:hover{
+    background-color: $secondaryColor;
+}
+
+@media(max-width:965px){
+    #hero{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .hero__left,.hero__right{
+        width: 80%;
+    }
+}
+
+@media(max-width:400px){
+    .hero__left,.hero__right{
+        width: 100%;
+    }
+}
+
+#features{
+    padding: 80px 0px;
+}
+
+.documentary__btn{
+    width: 165px;
+    height: 47px;
+    color: $primaryColor;
+    background: $hoverColor;
+    border: 1px solid $hoverColor;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.prebuild__btn{
+    width: 165px;
+    height: 47px;
+    color: $primaryColor;
+    background: pink;
+    border: 1px solid pink;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.documentary__btn:hover{
+    background: $secondaryColor;
+    
+}
+.prebuild__btn:hover{
+    background: $secondaryColor;
+    
+}
+
+.features__left{
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 40%;
+}
+
+.features__left__title{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.features__right{
+    width: 40%;
+}
+
+@media(max-width:1050px){
+    #features{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .features__left,.features__right{
+        width: 80%;
+    }
+}
+
+@media(max-width:500px){
+    .features__left,.features__right{
+        width: 100%;
+    }
+}
+
+#blog{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 80px;
+}
+
+.gitlab__btn{
+    width: 250px;
+    height: 50px;
+    align-items: center;
+    background: $hoverColor;
+    border: 1px solid $hoverColor;
+    border-radius: 5px;
+    padding: 10px 15px;
+}
+
+.gitlab__btn:hover{
+    background: $secondaryColor;
+}
+
+.blog__card-left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.blog__card-left{
+    width: 45%;
+    padding: 30px 20px;
+    border-radius: 20px;
+    background: $secondaryColor;
+}
+
+.blog__card-right{
+    width: 45%;
+    padding: 50px 20px;
+    border-radius: 20px;
+    background: $secondaryColor;
+}
+
+.wokspace__btn{
+    width: 150px;
+    height: 30px;
+    font-size: 14px;
+    color: $secondaryColor;
+    background: $primaryColor;
+    border: 1px solid $primaryColor;
+    padding: 5px 10px;
+    border-radius: 15px;
+}
+
+.wokspace__btn:hover{
+    background: $secondaryColor;
+    color: $primaryColor;
+}
+
+.blog__card-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@media(max-width:1150px){
+    .blog__cards{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        align-items: center;
+    }
+    .blog__card-left,.blog__card-right{
+        width: 80%;
+    }
+}
+
+@media(max-width:600px){
+    .blog__card-left,.blog__card-right{
+        width: 100%;
+    }
+}
